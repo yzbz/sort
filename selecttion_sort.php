@@ -22,7 +22,7 @@ function selection_sort($arr) {
 //选择排序，双路优化
 function selection_sort_1($arr) {
     $len = count($arr);
-    for ($left = 0,$right = $len;$left < $right; $left++,$right--) {
+    for ($left = 0,$right = $len -1;$left < $right; $left++,$right--) {
         $min = $left;
         $max = $right;
         for ($i = $left + 1; $i < $right; $i++) {
