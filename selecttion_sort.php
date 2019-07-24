@@ -25,7 +25,7 @@ function selection_sort_1($arr) {
     for ($left = 0,$right = $len -1;$left < $right; $left++,$right--) {
         $min = $left;
         $max = $right;
-        for ($i = $left + 1; $i < $right; $i++) {
+        for ($i = $left + 1; $i <= $right; $i++) {//此处需要相等，因为需要第一个和最后一个去比较
             if ($arr[$i] <= $arr[$min]) {
                 $min = $i;
             }
