@@ -6,7 +6,7 @@ function sort_1($arr) {
         for ($j=$i - 1;$j >= 0 && $tmp < $arr[$j]; $j--) {
             $arr[$j+1] = $arr[$j];//如果比要插入的大，则往后移动
         }
-        $arr[$j+1] = $tmp;
+        $arr[$j+1] = $tmp;//如果比插入的小，则把标志位插入到比他小的下一个，与for那一样，都是赋值给$arr[$j+1]
     }
     return $arr;
 }
