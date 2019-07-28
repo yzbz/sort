@@ -9,7 +9,9 @@ function arr_reverse($arr) {
             $tmp = $arr[$begin];
             $arr[$begin] = $arr[$end];
             $arr[$end] = $tmp;
-        }
+        } else {
+			break;
+		}
     }
     return $arr;
 }
